@@ -25,7 +25,6 @@ public class problem6 {
 
         System.out.println(dno+"진수로 " + result.reverse().toString() + "입니다.");
 
-
     }
 
     private static void printInfo(int dno, int n, int mod) {
