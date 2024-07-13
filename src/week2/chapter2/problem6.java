@@ -23,7 +23,7 @@ public class problem6 {
             n/=dno;
         } while(n > 0);
 
-        System.out.println(dno+"진수로 " + result.reverse().toString() + "입니다.");
+        System.out.println(dno+"진수로 " + result.reverse() + "입니다.");
 
     }
 
