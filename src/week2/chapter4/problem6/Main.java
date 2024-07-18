@@ -25,7 +25,7 @@ public class Main {
                     x = scanner.next();
                     try {
                         q.enque(x);
-                    } catch (IntArrayQueue.OverflowIntQueueException e) {
+                    } catch (OverflowQueueException e) {
                         System.out.println("큐가 가득 찼습니다.");
                     }
                     break;
@@ -34,7 +34,7 @@ public class Main {
                     try {
                         x = q.deque();
                         System.out.println("디큐한 데이터는 " + x + "입니다.");
-                    } catch (IntArrayQueue.EmptyIntQueueException e) {
+                    } catch (EmptyQueueException e) {
                         System.out.println("큐가 비어있습니다.");
                     }
                     break;
@@ -43,7 +43,7 @@ public class Main {
                     try {
                         x = q.peek();
                         System.out.println("피크한 데이터는 " + x + "입니다.");
-                    } catch (IntArrayQueue.EmptyIntQueueException e) {
+                    } catch (EmptyQueueException e) {
                         System.out.println("큐가 비어있습니다.");
                     }
                     break;
