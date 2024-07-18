@@ -24,7 +24,7 @@ public class Main {
                     x = stdIn.next();
                     try {
                         s.push(x);
-                    } catch (IntStack.OverflowIntStackException e) {
+                    } catch (Stack.OverflowGenericStackException e) {
                         System.out.println("스택이 가득 찼습니다.");
                     }
                     break;
@@ -33,7 +33,7 @@ public class Main {
                     try {
                         x = s.pop();
                         System.out.println("팝한 데이터는 " + x + "입니다.");
-                    } catch (IntStack.EmptyIntStackException e) {
+                    } catch (Stack.EmptyGenericStackException e) {
                         System.out.println("스택이 비어있습니다.");
                     }
                     break;
@@ -42,7 +42,7 @@ public class Main {
                     try {
                         x = s.peek();
                         System.out.println("피크한 데이터는 " + x + "입니다.");
-                    } catch (IntStack.EmptyIntStackException e) {
+                    } catch (Stack.EmptyGenericStackException e) {
                         System.out.println("스택이 비어있습니다.");
                     }
                     break;
@@ -65,7 +65,7 @@ public class Main {
                         } else {
                             System.out.println("해당 데이터는 " + index + "에 존재합니다.");
                         }
-                    } catch (IntStack.EmptyIntStackException e) {
+                    } catch (Stack.EmptyGenericStackException e) {
                         System.out.println("스택이 비어있습니다.");
                     }
                     break;

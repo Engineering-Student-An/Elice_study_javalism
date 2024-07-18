@@ -8,7 +8,13 @@ public class Stack<E>{
     private int capacity;
     private int ptr;
 
+    public static class EmptyGenericStackException extends RuntimeException {
+        public EmptyGenericStackException() { }
+    }
 
+    public static class OverflowGenericStackException extends RuntimeException {
+        public OverflowGenericStackException() { }
+    }
 
 
 
