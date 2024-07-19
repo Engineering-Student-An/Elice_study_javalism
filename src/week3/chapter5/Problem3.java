@@ -1,6 +1,5 @@
-package week2.chapter5;
+package week3.chapter5;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Problem3 {
