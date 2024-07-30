@@ -21,7 +21,8 @@ public class Problem13 {
 
     //--- 퀵 정렬 ---//
     static void quickSort(int[] a, int left, int right) {
-        // 요소수가 9이하인 경우 삽입 정렬 수행
+        // left:0, right:8 => 요솟수 9개 / left:0, right:9 => 요솟수 10개
+        // 요솟수가 9이하인 경우 삽입 정렬 수행
         if(right - left < 9) {
             System.out.printf("{%d, %d} => 단순 삽입 정렬\n", left, right);
             insertionSort(a, left, right);
@@ -50,7 +51,7 @@ public class Problem13 {
         if (pl < right) quickSort(a, pl, right);
     }
 
-    //--- 단순 삽입 정렬 ---//
+    // 실습 6-5의 단순 삽입 정렬 메서드 가져옴
     static void insertionSort(int[] a, int left, int right) {
         for (int i = left + 1; i <= right; i++) {
             int j;

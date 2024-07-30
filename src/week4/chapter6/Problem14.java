@@ -82,7 +82,7 @@ public class Problem14 {
             System.out.println("x[" + i + "]=" + x[i]);
     }
 
-    // quickSort 자체를 바꾸라하는 줄 알았는데 답지 띠용?
+    // 인수 2개 받는 메서드 정의
     private static void qSort(int[] x, int nx) {
         quickSort(x, 0, nx-1);
     }

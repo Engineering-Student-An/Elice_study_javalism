@@ -52,6 +52,21 @@ class QuickSort2 {
                     rstack.push(right);          // 인덱스를 푸시 (오른쪽은 작으니까 나중에 푸시 => 먼저 나눔)
                 }
             }
+
+            // 답지
+//            if (pr - left < right - pl) {
+//                int temp;
+//                temp = left;  left  = pl; pl = temp;
+//                temp = right; right = pr; pr = temp;
+//            }
+//            if (left < pr) {
+//                lstack.push(left);			// 왼쪽 그룹 범위의
+//                rstack.push(pr);				// 인덱스를 푸시
+//            }
+//            if (pl < right) {
+//                lstack.push(pl);				// 오른쪽 그룹 범위의
+//                rstack.push(right);			// 인덱스를 푸시
+//            }
         }
     }
 

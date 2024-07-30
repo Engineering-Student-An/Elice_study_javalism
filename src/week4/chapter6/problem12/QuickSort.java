@@ -37,7 +37,14 @@ class QuickSort {
             if (left < pr)  quickSort(a, left, pr);
         }
 
-
+        // 답지
+//        if (pr - left < right - pl) {
+//            int temp;
+//            temp = left;  left  = pl; pl = temp;
+//            temp = right; right = pr; pr = temp;
+//        }
+//        if (left < pr)  quickSort(a, left, pr);
+//        if (pl < right) quickSort(a, pl, right);
     }
 
     public static void main(String[] args) {
