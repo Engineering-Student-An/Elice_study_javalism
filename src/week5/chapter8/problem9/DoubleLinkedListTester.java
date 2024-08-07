@@ -197,15 +197,6 @@ class DoubleLinkedListTester {
 					list.purge(Data.NAME_ORDER);
 					break;
 
-			 case RETRIEVE : {						// 특정 노드를 출력
-					System.out.print("머리부터 몇 번째 데이터를 출력할까요? : ");
-					int no = stdIn.nextInt() - 1;
-					ptr = list.retrieve(no);
-					if (ptr == null)
-						System.out.println("그 데이터는 존재하지 않습니다.");
-					else
-						System.out.println("그 데이터는 " + ptr.toString() + "입니다.");
-			 }
 			}
 		} while (menu != Menu.TERMINATE);
 	}
